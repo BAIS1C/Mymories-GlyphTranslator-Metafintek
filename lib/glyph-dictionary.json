@@ -1,0 +1,679 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "source": "https://x.com/austin_moraski/status/2017367148130173284",
+    "author_credit": "Austin Moraski (core civilisational glyphs)",
+    "extended_by": "Sean Uddin / Metafintek",
+    "license": "Open use with attribution",
+    "note": "Extended with granular common-word mappings for literal translation"
+  },
+  "categories": {
+    "pronouns": {
+      "👤": {
+        "en": "I / me / self",
+        "zh": "我 / 自己",
+        "keywords": ["i", "me", "myself", "self"]
+      },
+      "👥": {
+        "en": "we / us / people / group",
+        "zh": "我们 / 人们 / 群体",
+        "keywords": ["we", "us", "our", "ourselves", "people", "group", "team", "folks"]
+      },
+      "👆": {
+        "en": "you",
+        "zh": "你 / 您",
+        "keywords": ["you", "your", "yourself"]
+      },
+      "👤👤": {
+        "en": "they / them / others",
+        "zh": "他们 / 她们 / 别人",
+        "keywords": ["they", "them", "their", "others", "those"]
+      }
+    },
+    "verbs_core": {
+      "✅": {
+        "en": "is / am / are / be / yes",
+        "zh": "是 / 存在 / 对",
+        "keywords": ["is", "am", "are", "be", "being", "yes", "true", "exists", "exist"]
+      },
+      "🚫": {
+        "en": "not / no / isn't / don't",
+        "zh": "不 / 没有 / 否",
+        "keywords": ["not", "no", "dont", "doesnt", "isnt", "arent", "never", "none", "without"]
+      },
+      "➡️": {
+        "en": "to / towards / becomes / leads to",
+        "zh": "到 / 向 / 成为 / 导致",
+        "keywords": ["to", "towards", "toward", "becomes", "become", "leads", "into", "onto"]
+      },
+      "⬅️": {
+        "en": "from / away from / comes from",
+        "zh": "从 / 来自",
+        "keywords": ["from", "away", "comes", "came", "coming"]
+      },
+      "🔄": {
+        "en": "change / transform / cycle / repeat",
+        "zh": "改变 / 转变 / 循环 / 重复",
+        "keywords": ["change", "changes", "changing", "transform", "cycle", "repeat", "again", "loop", "return"]
+      },
+      "🎯": {
+        "en": "want / need / goal / target / aim",
+        "zh": "想要 / 需要 / 目标",
+        "keywords": ["want", "wants", "wanted", "need", "needs", "needed", "goal", "target", "aim", "desire", "wish"]
+      },
+      "🤔": {
+        "en": "think / believe / consider / wonder",
+        "zh": "想 / 认为 / 考虑",
+        "keywords": ["think", "thinks", "thinking", "thought", "believe", "believes", "consider", "wonder", "ponder", "suppose"]
+      },
+      "💬": {
+        "en": "say / speak / tell / communicate",
+        "zh": "说 / 讲 / 告诉 / 沟通",
+        "keywords": ["say", "says", "said", "speak", "tell", "told", "talk", "communicate", "express", "mention"]
+      },
+      "👀": {
+        "en": "see / look / watch / observe",
+        "zh": "看 / 观察",
+        "keywords": ["see", "sees", "saw", "seen", "look", "looking", "watch", "observe", "view", "notice"]
+      },
+      "👂": {
+        "en": "hear / listen",
+        "zh": "听",
+        "keywords": ["hear", "hears", "heard", "listen", "listening"]
+      },
+      "🏃": {
+        "en": "do / act / move / go",
+        "zh": "做 / 行动 / 走",
+        "keywords": ["do", "does", "did", "doing", "done", "act", "action", "move", "go", "goes", "going", "went"]
+      },
+      "🛠️": {
+        "en": "make / build / create / work",
+        "zh": "做 / 建造 / 创造 / 工作",
+        "keywords": ["make", "makes", "made", "making", "build", "builds", "built", "building", "create", "work", "works", "working", "construct"]
+      },
+      "📥": {
+        "en": "get / receive / take / obtain",
+        "zh": "得到 / 收到 / 拿",
+        "keywords": ["get", "gets", "got", "getting", "receive", "take", "takes", "took", "taking", "obtain", "acquire"]
+      },
+      "📤": {
+        "en": "give / send / provide / share",
+        "zh": "给 / 发送 / 提供 / 分享",
+        "keywords": ["give", "gives", "gave", "giving", "send", "sent", "provide", "share", "offer"]
+      },
+      "🔍": {
+        "en": "find / search / discover / look for",
+        "zh": "找 / 搜索 / 发现",
+        "keywords": ["find", "finds", "found", "search", "searching", "discover", "look for", "seek"]
+      },
+      "📚": {
+        "en": "know / learn / understand / study",
+        "zh": "知道 / 学习 / 理解",
+        "keywords": ["know", "knows", "knew", "known", "learn", "learns", "learned", "learning", "understand", "study", "education"]
+      },
+      "❤️": {
+        "en": "love / like / care / feel",
+        "zh": "爱 / 喜欢 / 关心 / 感觉",
+        "keywords": ["love", "loves", "loved", "like", "likes", "liked", "care", "cares", "feel", "feels", "feeling"]
+      },
+      "✋": {
+        "en": "stop / wait / hold / pause",
+        "zh": "停止 / 等待 / 暂停",
+        "keywords": ["stop", "stops", "stopped", "wait", "waiting", "hold", "pause", "halt"]
+      },
+      "▶️": {
+        "en": "start / begin / continue",
+        "zh": "开始 / 继续",
+        "keywords": ["start", "starts", "started", "begin", "begins", "began", "continue", "continues"]
+      },
+      "✨": {
+        "en": "can / able / possible / enable",
+        "zh": "能 / 可以 / 可能",
+        "keywords": ["can", "could", "able", "ability", "possible", "enable", "capable", "may", "might"]
+      },
+      "💪": {
+        "en": "must / should / have to / strong",
+        "zh": "必须 / 应该 / 强",
+        "keywords": ["must", "should", "have to", "has to", "ought", "shall", "strong", "strength"]
+      }
+    },
+    "connectors": {
+      "➕": {
+        "en": "and / also / plus / with",
+        "zh": "和 / 也 / 加 / 与",
+        "keywords": ["and", "also", "plus", "with", "along", "together", "as well", "too", "additionally"]
+      },
+      "🔀": {
+        "en": "or / either / alternative",
+        "zh": "或 / 或者",
+        "keywords": ["or", "either", "alternatively", "otherwise"]
+      },
+      "⚡": {
+        "en": "but / however / yet / though",
+        "zh": "但是 / 然而 / 却",
+        "keywords": ["but", "however", "yet", "though", "although", "despite", "still", "nevertheless"]
+      },
+      "∵": {
+        "en": "because / since / reason",
+        "zh": "因为 / 由于 / 原因",
+        "keywords": ["because", "since", "reason", "cause", "why", "due to", "as"]
+      },
+      "∴": {
+        "en": "so / therefore / thus / then",
+        "zh": "所以 / 因此 / 然后",
+        "keywords": ["so", "therefore", "thus", "then", "hence", "consequently", "result"]
+      },
+      "❓": {
+        "en": "if / whether / condition",
+        "zh": "如果 / 是否 / 条件",
+        "keywords": ["if", "whether", "condition", "when", "whenever", "suppose"]
+      }
+    },
+    "modifiers": {
+      "👍": {
+        "en": "good / well / positive / right",
+        "zh": "好 / 正确 / 积极",
+        "keywords": ["good", "well", "great", "positive", "right", "correct", "nice", "fine", "okay", "ok"]
+      },
+      "👎": {
+        "en": "bad / wrong / negative / poor",
+        "zh": "坏 / 错误 / 消极",
+        "keywords": ["bad", "wrong", "negative", "poor", "terrible", "awful", "incorrect"]
+      },
+      "📈": {
+        "en": "more / increase / grow / up / big",
+        "zh": "更多 / 增加 / 增长 / 大",
+        "keywords": ["more", "increase", "grow", "grows", "growing", "up", "big", "bigger", "large", "larger", "greater", "expand", "rise", "high", "higher", "many", "much", "very"]
+      },
+      "📉": {
+        "en": "less / decrease / shrink / down / small",
+        "zh": "更少 / 减少 / 缩小 / 小",
+        "keywords": ["less", "decrease", "shrink", "down", "small", "smaller", "little", "few", "lower", "reduce", "low"]
+      },
+      "🆕": {
+        "en": "new / fresh / recent / modern",
+        "zh": "新 / 新鲜 / 最近 / 现代",
+        "keywords": ["new", "fresh", "recent", "modern", "latest", "current", "novel"]
+      },
+      "🏛️": {
+        "en": "old / ancient / past / traditional",
+        "zh": "旧 / 古老 / 过去 / 传统",
+        "keywords": ["old", "ancient", "past", "traditional", "former", "previous", "classic", "historical"]
+      },
+      "⏩": {
+        "en": "fast / quick / rapid / soon",
+        "zh": "快 / 迅速 / 很快",
+        "keywords": ["fast", "quick", "quickly", "rapid", "rapidly", "soon", "immediate", "instantly", "speed"]
+      },
+      "🐢": {
+        "en": "slow / gradual / patient",
+        "zh": "慢 / 逐渐 / 耐心",
+        "keywords": ["slow", "slowly", "gradual", "gradually", "patient", "patience"]
+      },
+      "💯": {
+        "en": "all / every / complete / total / full",
+        "zh": "全部 / 每个 / 完整 / 总",
+        "keywords": ["all", "every", "everything", "everyone", "complete", "total", "full", "entire", "whole", "always"]
+      },
+      "➖": {
+        "en": "some / part / partial / few",
+        "zh": "一些 / 部分",
+        "keywords": ["some", "part", "partial", "few", "several", "certain", "sometimes"]
+      },
+      "0️⃣": {
+        "en": "none / zero / nothing / empty",
+        "zh": "没有 / 零 / 空",
+        "keywords": ["none", "zero", "nothing", "empty", "null", "void"]
+      },
+      "1️⃣": {
+        "en": "one / single / only / first",
+        "zh": "一 / 单一 / 唯一 / 第一",
+        "keywords": ["one", "single", "only", "first", "sole", "alone", "unique"]
+      }
+    },
+    "time": {
+      "⏰": {
+        "en": "time / when / moment",
+        "zh": "时间 / 当...时 / 时刻",
+        "keywords": ["time", "moment", "period", "timing"]
+      },
+      "⬅️⏰": {
+        "en": "past / before / ago / was / were",
+        "zh": "过去 / 之前 / 以前",
+        "keywords": ["past", "before", "ago", "was", "were", "previously", "earlier", "yesterday", "history"]
+      },
+      "⏰▶️": {
+        "en": "now / present / current / today",
+        "zh": "现在 / 当前 / 今天",
+        "keywords": ["now", "present", "currently", "today", "right now", "at the moment"]
+      },
+      "➡️⏰": {
+        "en": "future / will / later / tomorrow",
+        "zh": "未来 / 将 / 以后 / 明天",
+        "keywords": ["future", "will", "would", "later", "tomorrow", "eventually", "going to", "gonna"]
+      }
+    },
+    "places": {
+      "📍": {
+        "en": "here / this place / location",
+        "zh": "这里 / 这个地方 / 位置",
+        "keywords": ["here", "this", "place", "location", "spot", "where"]
+      },
+      "📍➡️": {
+        "en": "there / that place",
+        "zh": "那里 / 那个地方",
+        "keywords": ["there", "that", "over there"]
+      },
+      "🏠": {
+        "en": "home / house / dwelling",
+        "zh": "家 / 房子 / 住所",
+        "keywords": ["home", "house", "housing", "dwelling", "residence", "live", "lives", "living"]
+      },
+      "🌍": {
+        "en": "world / earth / global / planet",
+        "zh": "世界 / 地球 / 全球",
+        "keywords": ["world", "earth", "global", "planet", "worldwide", "international"]
+      },
+      "🏢": {
+        "en": "work / office / company / business",
+        "zh": "工作 / 办公室 / 公司",
+        "keywords": ["office", "company", "business", "workplace", "job", "corporate", "organization"]
+      }
+    },
+    "things": {
+      "📄": {
+        "en": "thing / object / item / it",
+        "zh": "东西 / 物品 / 它",
+        "keywords": ["thing", "things", "object", "item", "it", "something", "anything", "stuff"]
+      },
+      "💭": {
+        "en": "idea / thought / concept / mind",
+        "zh": "想法 / 思想 / 概念 / 心智",
+        "keywords": ["idea", "ideas", "thought", "thoughts", "concept", "mind", "notion", "theory"]
+      },
+      "📝": {
+        "en": "text / write / document / note",
+        "zh": "文本 / 写 / 文档 / 笔记",
+        "keywords": ["text", "write", "writes", "writing", "written", "wrote", "document", "note", "notes", "message"]
+      },
+      "💰": {
+        "en": "money / cost / price / value / pay",
+        "zh": "钱 / 成本 / 价格 / 价值 / 支付",
+        "keywords": ["money", "cost", "price", "value", "pay", "payment", "dollar", "dollars", "cash", "currency", "financial", "finance", "economic"]
+      },
+      "🍞": {
+        "en": "food / eat / meal",
+        "zh": "食物 / 吃 / 餐",
+        "keywords": ["food", "eat", "eats", "eating", "ate", "meal", "meals", "hungry", "feed"]
+      },
+      "💧": {
+        "en": "water / drink / liquid",
+        "zh": "水 / 喝 / 液体",
+        "keywords": ["water", "drink", "drinks", "drinking", "liquid", "thirsty"]
+      },
+      "⚡": {
+        "en": "energy / power / electricity",
+        "zh": "能量 / 电力",
+        "keywords": ["energy", "power", "electricity", "electric", "fuel"]
+      }
+    },
+    "questions": {
+      "❓": {
+        "en": "what / which",
+        "zh": "什么 / 哪个",
+        "keywords": ["what", "which"]
+      },
+      "👤❓": {
+        "en": "who / whom",
+        "zh": "谁",
+        "keywords": ["who", "whom", "whose"]
+      },
+      "📍❓": {
+        "en": "where",
+        "zh": "哪里",
+        "keywords": ["where"]
+      },
+      "⏰❓": {
+        "en": "when",
+        "zh": "什么时候",
+        "keywords": ["when"]
+      },
+      "∵❓": {
+        "en": "why",
+        "zh": "为什么",
+        "keywords": ["why"]
+      },
+      "🔧❓": {
+        "en": "how",
+        "zh": "怎么 / 如何",
+        "keywords": ["how"]
+      }
+    },
+    "ai_tech": {
+      "🤖": {
+        "en": "AI / robot / machine / automated / bot",
+        "zh": "AI / 机器人 / 机器 / 自动化",
+        "keywords": ["ai", "robot", "machine", "automated", "automation", "bot", "artificial", "intelligence", "algorithm"]
+      },
+      "🤖🤖🤖": {
+        "en": "Triple AI Architecture",
+        "zh": "三重 AI 架构",
+        "keywords": ["triple ai", "ai architecture", "three ai"]
+      },
+      "👑♂️": {
+        "en": "Masculine AI (execution / protection / decisiveness)",
+        "zh": "男性特质 AI（执行 / 保护 / 决断）",
+        "keywords": ["masculine ai", "execution", "protection", "decisiveness", "decisive", "defend"]
+      },
+      "👑♀️": {
+        "en": "Feminine AI (empathy / foresight / care)",
+        "zh": "女性特质 AI（共情 / 预见 / 关怀）",
+        "keywords": ["feminine ai", "empathy", "foresight", "nurture", "anticipate"]
+      },
+      "⚖️": {
+        "en": "balance / fair / justice / equal",
+        "zh": "平衡 / 公平 / 正义 / 平等",
+        "keywords": ["balance", "balanced", "fair", "fairness", "justice", "equal", "equality", "equity", "checks", "check"]
+      },
+      "♻️": {
+        "en": "recursive / iterate / refine / improve / repeat",
+        "zh": "递归 / 迭代 / 改进 / 重复",
+        "keywords": ["recursive", "iterate", "iterative", "refine", "refinement", "improve", "improvement", "repeat", "feedback"]
+      },
+      "🎲": {
+        "en": "random / chance / lottery",
+        "zh": "随机 / 机会 / 抽签",
+        "keywords": ["random", "chance", "lottery", "sortition", "luck"]
+      },
+      "📊": {
+        "en": "data / statistics / measure / analytics",
+        "zh": "数据 / 统计 / 测量 / 分析",
+        "keywords": ["data", "statistics", "stats", "measure", "measurement", "analytics", "analysis", "metric", "metrics"]
+      },
+      "🧠": {
+        "en": "brain / intelligence / smart / wisdom / cognitive",
+        "zh": "大脑 / 智能 / 聪明 / 智慧 / 认知",
+        "keywords": ["brain", "intelligence", "intelligent", "smart", "wisdom", "wise", "cognitive", "mental", "thinking", "clever"]
+      },
+      "🔁": {
+        "en": "feedback / loop / return / cycle",
+        "zh": "反馈 / 循环 / 返回",
+        "keywords": ["loop", "return", "circular"]
+      }
+    },
+    "infrastructure": {
+      "🏗️": {
+        "en": "infrastructure / build / construct / foundation",
+        "zh": "基础设施 / 建设 / 建造 / 基础",
+        "keywords": ["infrastructure", "construct", "construction", "foundation", "fundamental"]
+      },
+      "🌾": {
+        "en": "agriculture / farming / crops / harvest",
+        "zh": "农业 / 农场 / 作物 / 收获",
+        "keywords": ["agriculture", "farming", "farm", "crops", "harvest", "grain"]
+      },
+      "🧬": {
+        "en": "genetics / biology / life / DNA / health / medical",
+        "zh": "基因 / 生物 / 生命 / DNA / 健康 / 医疗",
+        "keywords": ["genetics", "genetic", "biology", "biological", "life", "dna", "health", "healthcare", "medical", "medicine", "doctor", "hospital"]
+      },
+      "🔓": {
+        "en": "open / free / voluntary / unlock / access",
+        "zh": "开放 / 免费 / 自愿 / 解锁 / 访问",
+        "keywords": ["open", "free", "voluntary", "unlock", "unlocked", "access", "accessible", "available"]
+      },
+      "🔒": {
+        "en": "closed / locked / secure / private / protected",
+        "zh": "关闭 / 锁定 / 安全 / 私人 / 保护",
+        "keywords": ["closed", "locked", "secure", "security", "private", "privacy", "protected", "protection", "safe", "safety"]
+      },
+      "💎": {
+        "en": "luxury / premium / valuable / precious",
+        "zh": "奢侈 / 高级 / 有价值 / 珍贵",
+        "keywords": ["luxury", "premium", "valuable", "precious", "rare", "exclusive", "quality"]
+      }
+    },
+    "knowledge": {
+      "🗂️": {
+        "en": "file / organize / categorize / system / archive",
+        "zh": "文件 / 组织 / 分类 / 系统 / 档案",
+        "keywords": ["file", "files", "organize", "category", "categorize", "system", "archive", "folder", "storage", "store", "stored"]
+      },
+      "🏆": {
+        "en": "achievement / win / success / trophy / merit",
+        "zh": "成就 / 胜利 / 成功 / 奖杯 / 功绩",
+        "keywords": ["achievement", "win", "wins", "won", "winner", "success", "successful", "trophy", "merit", "award", "prize", "accomplish"]
+      },
+      "🧩": {
+        "en": "puzzle / problem / solve / piece / fit",
+        "zh": "拼图 / 问题 / 解决 / 部分 / 适合",
+        "keywords": ["puzzle", "problem", "problems", "solve", "solving", "solution", "piece", "fit", "figure out"]
+      },
+      "🔧": {
+        "en": "tool / fix / repair / adjust / configure",
+        "zh": "工具 / 修复 / 修理 / 调整 / 配置",
+        "keywords": ["tool", "tools", "fix", "fixes", "fixing", "fixed", "repair", "adjust", "configure", "setting", "settings", "tweak"]
+      },
+      "🌿": {
+        "en": "nature / organic / grow / green / sustainable",
+        "zh": "自然 / 有机 / 生长 / 绿色 / 可持续",
+        "keywords": ["nature", "natural", "organic", "green", "sustainable", "environment", "environmental", "eco"]
+      },
+      "🧑‍🏫": {
+        "en": "teacher / teach / educate / guide / mentor",
+        "zh": "老师 / 教 / 教育 / 指导 / 导师",
+        "keywords": ["teacher", "teach", "teaches", "teaching", "taught", "educate", "guide", "mentor", "instruct", "lesson"]
+      },
+      "📦": {
+        "en": "package / contain / box / bundle / wrap",
+        "zh": "包 / 包含 / 盒子 / 捆绑",
+        "keywords": ["package", "packages", "contain", "contains", "box", "bundle", "wrap", "wrapped", "container"]
+      },
+      "🔐": {
+        "en": "encrypt / secure / lock / protect / private",
+        "zh": "加密 / 安全 / 锁 / 保护 / 私人",
+        "keywords": ["encrypt", "encrypted", "encryption", "secure", "secured", "lock", "locked", "protect", "protected", "private", "secret"]
+      },
+      "👶": {
+        "en": "child / baby / young / new / begin / innocent",
+        "zh": "孩子 / 婴儿 / 年轻 / 新 / 开始 / 天真",
+        "keywords": ["child", "children", "baby", "babies", "young", "youth", "kid", "kids", "innocent", "newborn"]
+      }
+    },
+    "safety": {
+      "🛡️": {
+        "en": "shield / protect / defend / guard / safe",
+        "zh": "盾牌 / 保护 / 防御 / 守卫 / 安全",
+        "keywords": ["shield", "protect", "protection", "defend", "defense", "guard", "safe", "safety", "secure"]
+      },
+      "⚠️": {
+        "en": "warning / danger / caution / alert / risk",
+        "zh": "警告 / 危险 / 注意 / 警报 / 风险",
+        "keywords": ["warning", "warn", "danger", "dangerous", "caution", "alert", "risk", "risky", "hazard", "threat"]
+      },
+      "🔫": {
+        "en": "weapon / gun / violence / attack / war",
+        "zh": "武器 / 枪 / 暴力 / 攻击 / 战争",
+        "keywords": ["weapon", "weapons", "gun", "guns", "violence", "violent", "attack", "war", "warfare", "military", "fight", "fighting", "combat"]
+      },
+      "🧯": {
+        "en": "extinguish / suppress / prevent / stop harm",
+        "zh": "灭火 / 抑制 / 预防 / 阻止伤害",
+        "keywords": ["extinguish", "suppress", "prevent", "prevention", "stop harm", "emergency"]
+      }
+    },
+    "emotions": {
+      "🌱": {
+        "en": "seed / grow / potential / beginning / sprout",
+        "zh": "种子 / 生长 / 潜力 / 开始 / 发芽",
+        "keywords": ["seed", "potential", "beginning", "sprout", "develop", "development", "emerge"]
+      },
+      "🎨": {
+        "en": "art / creative / design / aesthetic / beauty",
+        "zh": "艺术 / 创意 / 设计 / 美学 / 美",
+        "keywords": ["art", "arts", "artistic", "creative", "creativity", "design", "aesthetic", "beauty", "beautiful", "style"]
+      },
+      "🫂": {
+        "en": "hug / embrace / support / comfort / community",
+        "zh": "拥抱 / 支持 / 安慰 / 社区",
+        "keywords": ["hug", "embrace", "support", "supporting", "comfort", "community", "together", "solidarity", "unity", "connect", "connection"]
+      },
+      "👨‍👩‍👧‍👦": {
+        "en": "family / household / relatives",
+        "zh": "家庭 / 家族 / 亲戚",
+        "keywords": ["family", "families", "household", "relatives", "parents", "parent"]
+      },
+      "😊": {
+        "en": "happy / joy / pleased / glad / smile",
+        "zh": "快乐 / 高兴 / 微笑",
+        "keywords": ["happy", "happiness", "joy", "joyful", "pleased", "glad", "smile", "smiling", "cheerful", "delight"]
+      },
+      "😢": {
+        "en": "sad / unhappy / grief / sorrow / cry",
+        "zh": "悲伤 / 不快乐 / 哭泣",
+        "keywords": ["sad", "sadness", "unhappy", "grief", "sorrow", "cry", "crying", "tears", "upset", "depressed"]
+      },
+      "😠": {
+        "en": "angry / mad / frustrated / annoyed",
+        "zh": "生气 / 愤怒 / 沮丧",
+        "keywords": ["angry", "anger", "mad", "frustrated", "frustration", "annoyed", "annoying", "irritated", "furious"]
+      },
+      "😨": {
+        "en": "fear / afraid / scared / worried / anxious",
+        "zh": "害怕 / 恐惧 / 担心 / 焦虑",
+        "keywords": ["fear", "afraid", "scared", "worry", "worried", "anxious", "anxiety", "nervous", "terrified"]
+      }
+    },
+    "space": {
+      "🚀": {
+        "en": "rocket / launch / space / mission / ambitious",
+        "zh": "火箭 / 发射 / 太空 / 任务 / 雄心勃勃",
+        "keywords": ["rocket", "launch", "space", "spacecraft", "mission", "ambitious", "ambition", "venture"]
+      },
+      "🔴": {
+        "en": "Mars / red planet",
+        "zh": "火星 / 红色星球",
+        "keywords": ["mars", "red planet", "martian"]
+      },
+      "☀️": {
+        "en": "sun / solar / light / bright / day",
+        "zh": "太阳 / 太阳能 / 光 / 明亮 / 白天",
+        "keywords": ["sun", "solar", "light", "bright", "brightness", "day", "daylight", "sunshine"]
+      },
+      "🌙": {
+        "en": "moon / night / lunar",
+        "zh": "月亮 / 夜晚 / 月球",
+        "keywords": ["moon", "night", "lunar", "evening", "dark", "darkness"]
+      },
+      "⚛️": {
+        "en": "atom / nuclear / atomic / particle / physics",
+        "zh": "原子 / 核 / 粒子 / 物理",
+        "keywords": ["atom", "atomic", "nuclear", "particle", "physics", "quantum", "molecular"]
+      },
+      "🪐": {
+        "en": "planet / planetary / orbit / cosmic",
+        "zh": "行星 / 轨道 / 宇宙",
+        "keywords": ["planet", "planetary", "orbit", "cosmic", "celestial", "universe"]
+      },
+      "📡": {
+        "en": "signal / transmit / communicate / broadcast / antenna",
+        "zh": "信号 / 传输 / 通信 / 广播 / 天线",
+        "keywords": ["signal", "transmit", "transmission", "broadcast", "antenna", "radio", "satellite", "wireless"]
+      }
+    },
+    "power": {
+      "🌀": {
+        "en": "spiral / dissolve / distribute / decentralize",
+        "zh": "螺旋 / 溶解 / 分布 / 去中心化",
+        "keywords": ["spiral", "dissolve", "distribute", "distributed", "decentralize", "decentralized", "decentralization", "spread"]
+      },
+      "⚙️": {
+        "en": "system / mechanism / process / gear / configure",
+        "zh": "系统 / 机制 / 过程 / 齿轮 / 配置",
+        "keywords": ["mechanism", "gear", "configure", "configuration", "machinery", "operation"]
+      },
+      "👑": {
+        "en": "king / queen / leader / ruler / authority / power",
+        "zh": "国王 / 女王 / 领导 / 统治者 / 权威 / 权力",
+        "keywords": ["king", "queen", "leader", "leaders", "leadership", "ruler", "authority", "powerful", "govern", "government", "rule", "ruling", "control", "boss", "chief", "head"]
+      },
+      "🏴": {
+        "en": "rebellion / revolution / change / resist / anarchist",
+        "zh": "反叛 / 革命 / 改变 / 抵抗 / 无政府主义者",
+        "keywords": ["rebellion", "rebel", "revolution", "revolutionary", "resist", "resistance", "anarchist", "uprising", "revolt"]
+      }
+    },
+    "meta": {
+      "🧠⚠️": {
+        "en": "Low confidence / Uncertain",
+        "zh": "低置信度 / 不确定",
+        "keywords": ["uncertain", "unsure", "maybe", "perhaps", "probably", "possibly", "might be"]
+      },
+      "💡": {
+        "en": "insight / eureka / realize / discover / aha",
+        "zh": "洞察 / 发现 / 意识到",
+        "keywords": ["insight", "eureka", "realize", "realized", "aha", "lightbulb"]
+      },
+      "❗": {
+        "en": "important / emphasis / attention / urgent",
+        "zh": "重要 / 强调 / 注意 / 紧急",
+        "keywords": ["important", "importance", "emphasis", "emphasize", "attention", "urgent", "urgency", "critical", "crucial", "key", "essential"]
+      },
+      "✓": {
+        "en": "done / complete / finished / check",
+        "zh": "完成 / 检查",
+        "keywords": ["done", "complete", "completed", "finish", "finished", "check", "checked", "tick", "verified"]
+      },
+      "🧪": {
+        "en": "test / experiment / try / trial",
+        "zh": "测试 / 实验 / 尝试",
+        "keywords": ["test", "testing", "tested", "experiment", "try", "trying", "tried", "trial", "attempt"]
+      },
+      "🔤": {
+        "en": "translate / translation / language / word",
+        "zh": "翻译 / 语言 / 词",
+        "keywords": ["translate", "translator", "translation", "translating", "language", "word", "words"]
+      }
+    }
+  },
+  "sequences": {
+    "canonical": [
+      {
+        "sequence": "🧬🌍⚛️🔄🤖🤖🤖⚖️👑♂️👑♀️♻️🎲👥📊🌍🧠🔁",
+        "meaning": "Complete governance model"
+      },
+      {
+        "sequence": "🏗️🌾⚡🏠🧬📚✅🚫💰🔓💎✨📈📉",
+        "meaning": "Economic model: Basic needs guaranteed"
+      },
+      {
+        "sequence": "🗂️🧠🧬🏆🧩🔧🌿🧑‍🏫📦🔐👶",
+        "meaning": "Knowledge model"
+      },
+      {
+        "sequence": "🛡️⚠️✋🧠🚫🔫🧬🧯",
+        "meaning": "Safety model"
+      },
+      {
+        "sequence": "🌱📉📈❤️🧠🎨🫂",
+        "meaning": "Flourishing model"
+      },
+      {
+        "sequence": "🚀🔴🤖🌿⚛️☀️🌍🪐📡",
+        "meaning": "Expansion model"
+      },
+      {
+        "sequence": "🌀🌀🌀⚙️🧠",
+        "meaning": "Power dissolution model"
+      },
+      {
+        "sequence": "💣➡️🛠️",
+        "meaning": "Scarcity→Abundance"
+      },
+      {
+        "sequence": "🤖➡️🧠",
+        "meaning": "AI→Human"
+      }
+    ]
+  }
+}

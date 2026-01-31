@@ -1,0 +1,283 @@
+/* Glyph Translator - Extension Popup Styles */
+
+:root {
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #1a1a1a;
+  --bg-tertiary: #252525;
+  --text-primary: #e0e0e0;
+  --text-secondary: #888;
+  --accent: #00d4aa;
+  --accent-dim: #00a88a;
+  --warning: #ffaa00;
+  --error: #ff4444;
+  --border: #333;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  width: 380px;
+  min-height: 480px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 12px;
+}
+
+/* Header */
+header {
+  margin-bottom: 12px;
+}
+
+header h1 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.mode-toggle {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-secondary);
+  padding: 4px;
+  border-radius: var(--radius);
+}
+
+.mode-btn {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+}
+
+.mode-btn:hover {
+  color: var(--text-primary);
+  background: var(--bg-tertiary);
+}
+
+.mode-btn.active {
+  background: var(--accent);
+  color: var(--bg-primary);
+}
+
+/* Panes */
+.pane {
+  margin-bottom: 10px;
+}
+
+.pane label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pane textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  resize: none;
+  font-family: inherit;
+}
+
+.pane textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.pane textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+.output-pane textarea {
+  background: var(--bg-tertiary);
+  font-size: 18px;
+  min-height: 80px;
+}
+
+/* Select */
+#lang-select {
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 11px;
+  cursor: pointer;
+}
+
+/* Badge */
+.badge {
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.badge.hidden {
+  display: none;
+}
+
+#confidence-badge {
+  background: var(--accent-dim);
+  color: var(--bg-primary);
+}
+
+#confidence-badge.low {
+  background: var(--warning);
+}
+
+#confidence-badge.very-low {
+  background: var(--error);
+}
+
+/* Gloss and Unmatched sections */
+.gloss, .unmatched {
+  margin-top: 8px;
+  padding: 8px 10px;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.gloss.hidden, .unmatched.hidden {
+  display: none;
+}
+
+.gloss label, .unmatched label {
+  font-size: 10px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+  display: block;
+}
+
+.gloss p, .unmatched p {
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.unmatched p {
+  color: var(--warning);
+}
+
+/* Action Bar */
+.action-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.primary-btn, .secondary-btn {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.primary-btn {
+  background: var(--accent);
+  color: var(--bg-primary);
+}
+
+.primary-btn:hover {
+  background: var(--accent-dim);
+}
+
+.primary-btn:active {
+  transform: scale(0.98);
+}
+
+.secondary-btn {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.secondary-btn:hover {
+  background: var(--bg-secondary);
+  border-color: var(--text-secondary);
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+footer p {
+  font-size: 10px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Copy feedback */
+.copy-success {
+  animation: flash-success 0.3s ease;
+}
+
+@keyframes flash-success {
+  0% { background: var(--accent); }
+  100% { background: var(--bg-tertiary); }
+}

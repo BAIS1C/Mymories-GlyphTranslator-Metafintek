@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glyph Translator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧬 MyMories-GlyphTranslator</h1>
+      <div class="mode-toggle">
+        <button id="mode-text-to-glyph" class="mode-btn active">Text → Glyph</button>
+        <button id="mode-glyph-to-text" class="mode-btn">Glyph → Text</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="pane input-pane">
+        <label for="input-text">
+          <span id="input-label">Enter text</span>
+          <select id="lang-select">
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+          </select>
+        </label>
+        <textarea id="input-text" placeholder="Type or paste here..."></textarea>
+      </div>
+
+      <div class="action-bar">
+        <button id="translate-btn" class="primary-btn">Translate</button>
+        <button id="clear-btn" class="secondary-btn">Clear</button>
+      </div>
+
+      <div class="pane output-pane">
+        <label for="output-text">
+          <span id="output-label">Glyph output</span>
+          <span id="confidence-badge" class="badge hidden">0%</span>
+        </label>
+        <textarea id="output-text" readonly placeholder="Translation appears here..."></textarea>
+        <div id="gloss-section" class="gloss hidden">
+          <label>Gloss:</label>
+          <p id="gloss-text"></p>
+        </div>
+        <div id="unmatched-section" class="unmatched hidden">
+          <label>Unmatched:</label>
+          <p id="unmatched-text"></p>
+        </div>
+      </div>
+
+      <div class="action-bar">
+        <button id="copy-btn" class="primary-btn">Copy Result</button>
+        <button id="copy-with-gloss-btn" class="secondary-btn">Copy with Gloss</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Glyph system: <a href="https://x.com/austin_moraski" target="_blank">@austin_moraski</a>
+        &nbsp;|&nbsp;
+        <a href="https://metafintek.xyz" target="_blank">Metafintek</a>
+      </p>
+    </footer>
+  </div>
+
+  <script src="lib/translator.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
